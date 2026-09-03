@@ -1,19 +1,21 @@
 # Minimal ETL Modeler downloads
 
-Public binary/download channel for [Minimal ETL Modeler](https://minimal-etl-modeler.vercel.app/).
+Public download channel for [Minimal ETL Modeler](https://minimal-etl-modeler.vercel.app/).
 
-The product source repository is private. This repository intentionally contains no customer data, credentials, telemetry, project files, or application source code. It exists only so the portable release artifacts can be downloaded anonymously.
+The product source repository is private. This repository intentionally contains no customer data, credentials, telemetry, project files, or application source code. It exists only so release artifacts can be downloaded anonymously.
 
-## v0.14.0
+## v0.14.1
 
-- **Portable Browser** — unzip and open `index.html`; no installation or administrator rights.
-- **Portable Large Desktop (Windows x64)** — single portable executable with native DuckDB; no installer or administrator rights.
+- **Portable Browser ZIP** — extract and open `index.html`; no installation or administrator rights.
+- **Electron Large Windows ZIP** — draw.io-style distribution: extract the complete app folder and open Minimal ETL Modeler Large; no installer or administrator rights.
+
+The Windows download is a ZIP, not a loose portable `.exe` release asset. Like every Electron app on Windows, the extracted application folder contains its executable launcher and support files; keep that folder together.
 
 ### SHA-256
 
-- Browser ZIP: `4c4f4d70ee8b93fbe23b4fb872b8304b17c09f3be8e090db1ba5c22ba94e4e79`
-- Windows portable EXE: `88bd1c83a7af34526b8705c2eeae1ed2cf50c9ca5b77c2b1039dbfd773cf9372`
+- Browser ZIP: `6537a2267f5978dbd067482a2f232ca4c93d598c3b4f25358d694dda8bb38050`
+- Electron Large Windows ZIP: `2deca8ec3e788f3c37a0541adf13cd6299f7e9f7106071a47527545eede6ea16`
 
-The Windows executable is currently unsigned. SmartScreen, AppLocker, WDAC, antivirus, or corporate endpoint policy may block it. Use Portable Browser on locked-down systems.
+`SHA256SUMS` and `release-assets-manifest.json` are attached to the release. Windows endpoint policy may still block the launcher after extraction; use Portable Browser on locked-down systems.
 
 Release date: September 3, 2026.
